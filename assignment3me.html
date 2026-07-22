@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    .form-container {
+      width: 400px;
+      margin: auto;
+    }
+
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .form-group input,
+    .form-group select {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    /* Flexbox for side-by-side fields */
+    .flex-row {
+      display: flex;
+      gap: 15px;
+    }
+
+    .flex-row .form-group {
+      flex: 1;
+    }
+
+    .submit-btn {
+      width: 100%;
+      padding: 10px;
+      background: #3498db;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .submit-btn:hover {
+      background: #2980b9;
+    }
+    </style>
+</head>
+
+<body>
+  <div class="form-container">
+    <h2>Registration Form</h2>
+    <form>
+      <div class="flex-row">
+        <div class="form-group">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="fname">
+        </div>
+        <div class="form-group">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lname">
+        </div>
+      </div>
+
+      <div class="flex-row">
+        <div class="form-group">
+          <label for="birthday">Birthday</label>
+          <input type="date" id="birthday" name="birthday">
+        </div>
+        <div class="form-group">
+          <label for="gender">Gender</label>
+          <select id="gender" name="gender">
+            <option value="">Choose option</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone">
+      </div>
+
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <select id="subject" name="subject">
+          <option value="">Choose option</option>
+          <option value="math">Math</option>
+          <option value="science">Science</option>
+          <option value="english">English</option>
+        </select>
+      </div>
+
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+  </div>
+  
+</body>
+</html>

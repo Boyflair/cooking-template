@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ection{
+    display: flex;
+    gap: 1px;
+    margin-bottom: 15px;
+}
+div{
+    display: flex;
+    flex-direction:column ;
+    flex: 1;
+}
+label{
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+input{
+    padding: 8px;
+    width: 50%;
+    box-sizing: border-box;
+    background-color: rgb(245, 255, 255);
+    border-radius: 5px;
+}
+#subject{
+    width: 700px;
+    height: 40px;
+    font-size: medium; 
+    background-color: rgb(245, 255, 255); 
+    border-radius: 5px;
+    
+}
+#btn{
+    background-color: rgb(51, 51, 199);
+    width: 150px;
+    height: 40px;
+    margin-top: 20px;
+    font-size: medium;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    
+}
+    </style>
+</head>
+<body>
+   <main>
+    <h2>Registeration Form</h2>
+    <form action="">
+      <section>
+        <div>
+          <label>First Name</label>
+          <input type="text">
+         </div>
+
+        <div>
+          <label for="">Last Name</label>
+          <input type="text">
+        </div>
+      </section>
+
+      <section>
+        <div id="second">
+          <label for="">Birthday</label>
+          <input type="date">
+        </div>
+
+        <div>
+          <label for="">Gender</label>
+          <nav>
+          <input type="radio" name="Male" id="">
+          <label for="">Male</label>
+          <input type="radio" name="Female" id=""> 
+          <label for="">Female</label>
+          </nav>
+        </div>
+      </section>
+
+      <section>
+        <div id="">
+          <label for="">Email</label>
+          <input type="email">
+        </div>
+
+        <div>
+          <label for="">Phone Number</label>
+          <input type="number">
+        </div>
+      </section>
+    <div>
+       <label for="">Subject</label>
+       <select name="" id="subject" >
+         <option value="">choose option</option>
+         <option value="">English</option>
+         <option value="">Mathematics</option>
+         <option value="">Biology</option>
+         <option value="">Chemistry</option>
+         <option value="">Physcis</option>
+        </select>
+    </div> 
+
+    <button id="btn"><b>Submit</b></button> 
+    </form>
+   </main> 
+</body>
+</html>
