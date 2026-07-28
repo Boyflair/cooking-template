@@ -41,6 +41,10 @@
             font-size: 300%;
             margin: 5% 18% 4% 10%;
         }
+          #menu{
+            width: 2%;
+            display: none;
+        }
         /* image and inputs */
         .imgandinput{
             display: flex;
@@ -164,6 +168,165 @@
         color: black;
        }
 
+        @media(max-width: 1024px){
+       .donotdispayondesktop{
+        display: none;
+      }
+      /* head and nav bar */
+        #logo{
+            margin-right: 2%;
+            margin-left: 3%;
+        }
+        #headsocial{
+            padding-left: 50%;
+        }
+        /* imgsection */
+         #badge{
+            position: absolute;
+            right: 55%;
+            bottom: 68%;
+            
+           
+        }
+         /* imgandinput */
+          .imgandinput{
+            display: flex;
+            margin: 0% 0% 0% 0%;
+           
+        }
+        /* right */
+        .right{
+            margin: 5% 0% 0% 5%;
+        }
+      
+        input{
+            padding: 10% 50% 10% 0%;
+           
+        }
+        .topinputs{
+            display: flex;
+            gap: 35%;
+        }
+        textarea{
+            margin-top: 1%;
+            padding: 0% 112% 48.5% 2%;
+        }
+         #submit{
+           margin: 3% 0% 0% 45%;
+          
+        }
+         /* deliciousreceipe section */
+        .deliciousreceipe{
+           display: block;
+           text-align: center;
+        }
+        .deliciousgridone{
+         flex-wrap: wrap;
+         justify-content: center;
+           padding: 9%;
+        }
+        .deliciousgridtwo{
+         flex-wrap: wrap;
+         justify-content: center;
+         padding: 9%;
+        
+        }
+          /* foodlandandfooter */
+        #foodland{
+            margin-left: 3%;
+            
+        }
+        .footer{
+            gap: 37%;
+          margin: 1% 0% 0% 3%;
+
+        }
+      
+     }
+
+     
+
+
+
+
+
+
+
+
+     
+        @media(max-width: 786px){
+        .head{
+            display: flex;
+            gap: 6%;
+          border-bottom: 2px solid black;
+          background-color: blue ;
+        }
+        #menu{
+            display: block;
+            width: 5%;
+            margin-left: 6%;
+        }
+        .donotdisplay{
+          display: none;
+        }
+        /* imgandinput */
+          .imgandinput{
+            display: block;
+            margin: 0% 0% 0% 0%;
+        }
+        /* right */
+        .right{
+            margin: 5% 0% 0% 5%;
+        }
+      
+        input{
+            padding: 10% 5% 10% 0%;
+           
+        }
+        .topinputs{
+            display: flex;
+            gap: 4%;
+        }
+        textarea{
+            padding: 0% 55% 15% 2%;
+        }
+        #submit{
+           padding: 10px 25px 10px 25px;
+           margin: 3% 0% 0% 38%;
+           background-color: black;
+           color: white;
+           border-radius: 10px;
+        }
+          /* deliciousnesstoyourinbox */
+         #inputype{
+          top: 75%;
+          right: 27%; padding:2% 8% 2% 5%;
+         
+        }
+        #subscribe{
+            top: 77%;
+            right: 33%;
+            padding: 5px 7px 5px 7px;
+           
+        }
+          /* deliciousreceipe */
+        .deliciousgridone{
+         flex-wrap: wrap;
+         justify-content: center;
+           padding: 9%;
+        }
+         /* footer */
+         .footer{
+            display: block;
+            gap: 47%;
+          margin: 1% 0% 0% 5%;
+
+        }
+        .footer nav ul{
+         gap: 15%;
+        }
+    }
+
     </style>
 </head>
 <body>
@@ -172,17 +335,17 @@
             <img id="logo" src="../project/Foodieland..png" alt="">
             <nav>
                 <ul id="ulhead">
-                    <li> <a href="http://127.0.0.1:5500/Assignment/index.html">Home</a></li>
-                    <li>Receipes</li>
-                    <li> <a href="http://127.0.0.1:5500/Assignment/assignment9b.html">Blog</a></li>
-                    <li> <a href="http://127.0.0.1:5500/Assignment/assoignment9c.html">contact</a></li>
-                    <li>About</li>
-                     <li id="headsocial"><img src="../project/001-facebook.png" alt=""></li>
-                     <li><img src="../project/003-twitter.png" alt=""></li>
-                     <li> <img src="../project/004-instagram.png" alt=""></li>
+                    <li  class="donotdisplay"> <a href="http://127.0.0.1:5500/Assignment/index.html">Home</a></li>
+                    <li  class="donotdisplay"><a href="http://127.0.0.1:5500/Assignment/index.html">Receipes</a></li>
+                    <li  class="donotdisplay"> <a href="http://127.0.0.1:5500/Assignment/assignment9b.html">Blog</a></li>
+                    <li  class="donotdisplay"> <a href="http://127.0.0.1:5500/Assignment/assoignment9c.html">contact</a></li>
+                    <li  class="donotdisplay">About</li>
+                     <li  class="donotdisplay" id="headsocial"><img src="../project/001-facebook.png" alt=""></li>
+                     <li  class="donotdisplay"><img src="../project/003-twitter.png" alt=""></li>
+                     <li  class="donotdisplay"> <img src="../project/004-instagram.png" alt=""></li>
                 </ul>
             </nav>
-         
+                <img id="menu"  src="../assets/menu-line.svg" alt="">
         </div>
         <h1 id="contactus">Contact us</h1>
         <div class="imgandinput">
@@ -216,8 +379,8 @@
             <p id="deliciousseclorem">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
             <input type="text" name="" id="inputype">
             <button id="subscribe">subscribe</button>
-             <img id="saladleft" src="../project/kisspng-salad-salad-fresh-food-healthylife-vegetables-vegetarian-5d42e3a7cb8543 1.png" alt="">
-               <img id="saladright" src="../project/Photo (1).png" alt="">
+             <img  class="donotdisplay  donotdispayondesktop" id="saladleft" src="../project/kisspng-salad-salad-fresh-food-healthylife-vegetables-vegetarian-5d42e3a7cb8543 1.png" alt="">
+               <img  class="donotdisplay  donotdispayondesktop" id="saladright" src="../project/Photo (1).png" alt="">
              </div>
              <h2 id="hcheck">Check out this delicious receipe</h2>
           <div class="deliciousgridone">
@@ -234,7 +397,7 @@
             <div>
                 <nav>
                 <ul >
-                    <li>receipes</li>
+                    <li><a href="http://127.0.0.1:5500/Assignment/index.html">receipes</a></li>
                     <li><a href="http://127.0.0.1:5500/Assignment/assignment9b.html">Blog</a></li>
                     <li><a href="http://127.0.0.1:5500/Assignment/assoignment9c.html">Contact</a></li>
                     <li>about</li>
@@ -244,7 +407,7 @@
           </div>
           <div class="flowbase">
               <h3 id="flowbase">@2020 flowbase. powered by webflow</h3>
-              <div class="flowbasesocials">
+              <div class="flowbasesocials donotdisplay">
                  <img src="../project/001-facebook.png" alt="">
                 <img src="../project/003-twitter.png" alt="">
                 <img src="../project/004-instagram.png" alt="">

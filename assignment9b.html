@@ -36,6 +36,10 @@
         #headsocial{
             padding-left: 70%;
         } 
+         #menu{
+            width: 2%;
+            display: none;
+        }
         /* heading */
         h1{
            text-align: center;
@@ -90,7 +94,7 @@
             margin-right: 62%;
            font-size: 100%; 
         }
-       #hsecond{
+        #hsecond{
         text-align: center;
          margin-right: 50%;
          margin-top: 5%;
@@ -109,9 +113,9 @@
         }
         /* did you cook at home  */
          #hthird{
-        text-align: center;
+         text-align: center;
          margin-right: 50%;
-         margin-top: 5%;
+          margin-top: 5%;
            margin-bottom: 2%;
          
 
@@ -263,6 +267,181 @@
         text-decoration: none;
         color: black;
        }
+           /* meta queries */
+     @media(max-width: 1024px){
+     .donotdispayondesktop{
+        display: none;
+      }
+       /* head and nav bar */
+        #logo{
+            margin-right: 2%;
+            margin-left: 3%;
+        }
+        #headsocial{
+            padding-left: 50%;
+        }
+          /* deliciousreceipe to your ibox section */
+        #hdeliciious{
+            font-size: 300%;
+        }
+          #deliciousreceipetwo{
+           font-size: 300%; 
+        }
+        .deliciousgridone{
+         flex-wrap: wrap;
+         justify-content: center;
+           padding: 9%;
+        }
+          /* foodlandandfooter */
+        #foodland{
+            margin-left: 3%;
+            
+        }
+        .footer{
+            gap: 37%;
+          margin: 1% 0% 0% 3%;
+
+        }
+
+    }
+        
+
+
+
+
+
+
+
+
+
+       /* meta queries */
+        @media(max-width: 786px){
+        .head{
+            display: flex;
+            gap: 6%;
+          border-bottom: 2px solid black;
+          background-color: blue ;
+        }
+        #menu{
+            display: block;
+            width: 5%;
+            margin-left: 6%;
+        }
+        .donotdisplay{
+          display: none;
+        }
+        /* heading full guide */
+         h1{
+           font-size:130%;
+           text-align: center;
+           padding-top: 2%;
+        }
+         /* undermaskgroup */
+        #hfirst{
+            margin-top: 5%;
+            margin-right: 0%;
+            margin-bottom: 2%;
+             padding-top: 3%;
+        }
+        /* food industry */
+        .foodindustry{
+            margin-left: 0%;
+            margin-right: 0%;
+            
+        }
+        #third{
+            margin-right: 0%;
+           
+        }
+         #hsecond{
+         margin-right: 0%;
+         margin-top: 0%;
+        
+        }
+         /* whatyoulike */
+         #hsecond{
+        padding-top: 4%;
+        }
+        .whatyoulike{
+            margin-left: 0%;
+            margin-right: 0%; 
+        }
+         /* did you cook at home  */
+        #hthird{
+         margin-right: 0%;
+         margin-top: 0%;
+         margin-bottom: 2%;
+          padding-top: 4%;
+         
+
+        }
+        /* second image */
+        #img2{
+            margin-left: 10%;
+            margin-top: 3%;
+            width: 80%;
+        }
+        /* loremunder image 2 */
+         .underimg2{
+            margin-left: 0%;
+            margin-right: 0%;
+        }
+          /* whats your advice */
+        #hfourth{
+         margin-right: 0%;
+         margin-top: 0%;
+          padding-top: 4%;
+        }
+        /* advice writeup */
+        .advicewriteup{
+            margin-left: 0%;
+            margin-right: 0%;
+        }
+        /* grey area */
+        .opacity{
+            margin-left: 0%;
+            margin-right: 0%;       
+        }
+         /* misconception */
+        #misconception{
+         margin-right: 0%;
+         margin-top: 0%;
+          padding-top: 4%;
+        }
+        .misconceptionwriteup{
+            margin-left: 0%;
+            margin-right: 0%;  
+        }
+         /* deliciousnesstoyourinbox */
+         #inputype{
+          top: 75%;
+          right: 27%; padding:2% 8% 2% 5%;
+         
+        }
+        #subscribe{
+            top: 77%;
+            right: 33%;
+            padding: 5px 7px 5px 7px;
+           
+        }
+        /* deliciousreceipe */
+        .deliciousgridone{
+         flex-wrap: wrap;
+         justify-content: center;
+           padding: 9%;
+           
+        }
+         /* footer */
+         .footer{
+            display: block;
+            gap: 47%;
+          margin: 1% 0% 0% 5%;
+
+        }
+        .footer nav ul{
+         gap: 15%;
+        }
+        }
 
 
     </style>
@@ -273,17 +452,17 @@
             <img id="logo" src="../project/Foodieland..png" alt="">
             <nav>
                 <ul id="ulhead">
-                    <li><a href="http://127.0.0.1:5500/Assignment/index.html">Home</a></li>
-                    <li>Receipes</li>
-                    <li>  <a href="http://127.0.0.1:5500/Assignment/assignment9b.html">Blog</a></li>
-                    <li> <a href="http://127.0.0.1:5500/Assignment/assoignment9c.html">Contact</a></li>
-                    <li>About</li>
-                     <li id="headsocial"><img src="../project/001-facebook.png" alt=""></li>
-                     <li><img src="../project/003-twitter.png" alt=""></li>
-                     <li> <img src="../project/004-instagram.png" alt=""></li>
+                    <li class="donotdisplay"><a href="http://127.0.0.1:5500/Assignment/index.html">Home</a></li>
+                    <li  class="donotdisplay"><a href="http://127.0.0.1:5500/Assignment/index.html">Receipes</a></li>
+                    <li  class="donotdisplay">  <a href="http://127.0.0.1:5500/Assignment/assignment9b.html">Blog</a></li>
+                    <li  class="donotdisplay"> <a href="http://127.0.0.1:5500/Assignment/assoignment9c.html">Contact</a></li>
+                    <li  class="donotdisplay">About</li>
+                     <li  class="donotdisplay" id="headsocial"><img src="../project/001-facebook.png" alt=""></li>
+                     <l  class="donotdisplay"><img src="../project/003-twitter.png" alt=""></l>
+                     <li  class="donotdisplay"> <img src="../project/004-instagram.png" alt=""></li>
                 </ul>
             </nav>
-         
+             <img id="menu"  src="../assets/menu-line.svg" alt="">
         </div>
         <h1>Full guide to becoming a professional chef</h1>
         <div class="johnsmith">
@@ -335,8 +514,8 @@
             <p id="deliciousseclorem">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
             <input type="text" name="" id="inputype">
             <button id="subscribe">subscribe</button>
-             <img id="saladleft" src="../project/kisspng-salad-salad-fresh-food-healthylife-vegetables-vegetarian-5d42e3a7cb8543 1.png" alt="">
-               <img id="saladright" src="../project/Photo (1).png" alt="">
+             <img class="donotdisplay  donotdispayondesktop" id="saladleft" src="../project/kisspng-salad-salad-fresh-food-healthylife-vegetables-vegetarian-5d42e3a7cb8543 1.png" alt="">
+               <img class="donotdisplay  donotdispayondesktop" id="saladright" src="../project/Photo (1).png" alt="">
 
          </div>
          <h2 id="hcheck">Check out this delicious receipe</h2>
@@ -354,7 +533,7 @@
             <div>
                 <nav>
                 <ul >
-                    <li>receipes</li>
+                    <li> <a href="http://127.0.0.1:5500/Assignment/index.html">receipes</a></li>
                     <li><a href="http://127.0.0.1:5500/Assignment/assignment9b.html">Blog</a></li>
                     <li><a href="http://127.0.0.1:5500/Assignment/assoignment9c.html">Contact</a></li>
                     <li>about</li>
@@ -364,7 +543,7 @@
           </div>
           <div class="flowbase">
               <h3 id="flowbase">@2020 flowbase. powered by webflow</h3>
-              <div class="flowbasesocials">
+              <div class="flowbasesocials donotdisplay">
                  <img src="../project/001-facebook.png" alt="">
                 <img src="../project/003-twitter.png" alt="">
                 <img src="../project/004-instagram.png" alt="">

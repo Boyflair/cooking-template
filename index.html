@@ -23,7 +23,7 @@
             
             
         }
-         #logo{
+        #logo{
             margin-right: 12%;
             margin-left: 8%;
         }
@@ -35,6 +35,10 @@
         }
         #headsocial{
             padding-left: 80%;
+        }
+        #menu{
+            width: 2%;
+            display: none;
         }
          /* fist-content */
         .spicybox{
@@ -86,6 +90,12 @@
             padding-bottom: 5%;
            
         }
+        #viewreceipes{
+            padding: 1% 4% 1% 4%;
+            border-radius: 10px;
+            color: white;
+            background-color: black;
+        }
         .minutes{
             display: flex;
             gap: 4%;
@@ -96,13 +106,6 @@
         #lorem{
             padding-top: 3%;
         }
-        /* .right{
-            width: 30%;
-        }
-         */
-        /* .firstimg{
-            width: 97%;
-        } */
         #badge{
             position: absolute;
             right: 47%;
@@ -118,9 +121,9 @@
             margin-left: 3%;
         }
         /* categorie */
-         .categorie{
+        .categorie{
             display: flex;
-            gap: 70%;
+            gap: 65%;
             margin: 5% 0% 3% 7%;
             
         }
@@ -136,6 +139,7 @@
             gap: 1%;
             padding-top: 3%;    
         }
+        /* simple and tasty receipe */
         #simple{
          text-align: center;
          margin: 5% 5% 1% 0%;
@@ -170,12 +174,12 @@
             gap: 1%;
            margin-left: 4%;
         }
-         /* chefsection */
-        .chefsection{
-            display: flex;
-            position: relative;
-            margin-left: 5%;
-            margin-top: 5%;
+    /* chefsection */
+    .chefsection{
+     display: flex;
+     position: relative;
+     margin-left: 5%;
+     margin-top: 5%;
     }
     /* left */
    
@@ -225,7 +229,6 @@
     .checkcontentbox{
         display: flex;
         gap: 2%;
-       /* padding-bottom: 10%; */
         padding-left: 4%;
         margin-top: 3%;
         
@@ -314,7 +317,7 @@
             background-color: black;
             border-radius: 10%;
         }
-    /* foodlandandfooter */
+         /* foodlandandfooter */
         #foodland{
             font-size: 170%;
             margin-left: 5%;
@@ -339,7 +342,280 @@
        }
        a{
         text-decoration: none;
+        color: black;
        }
+
+         /* meta queries */
+     @media(max-width: 1024px){
+     .donotdispayondesktop{
+        display: none;
+      }
+      /* head and nav bar */
+        #logo{
+            margin-right: 7%;
+            margin-left: 3%;
+        }
+        #headsocial{
+            padding-left: 50%;
+        }
+        /* imgsection */
+         #badge{
+            position: absolute;
+            right: 55%;
+            bottom: 68%;
+            
+           
+        }
+         .categorie{
+            margin: 5% 0% 3% 2%;
+            
+        }
+         .insidecategories{
+            padding-left:3% ;
+            flex-wrap: wrap;
+            
+        }
+        /* simple and tasty receipe */
+         /* gridsection */
+          .firstgrid{
+            flex-wrap:wrap ;
+           
+            
+        }
+          .secondgrid{
+            flex-wrap:wrap ;
+           
+
+        }
+          .thirdgrid{
+           flex-wrap:wrap ;
+           
+        }
+           .chefsection{
+         display: block;
+         text-align: center;
+         margin-top: .5%;
+        }
+         /* h1writeup  */
+        .everyone{
+         font-size: 500%;
+         padding: 10% 0% 0% 0%;
+        
+        }
+        .everyonetwo{
+         font-size: 400%;
+         padding: 1% 0% 0% 0%;   
+        }
+        /* learnmorebutton */
+        #learnmore{
+         margin: 10% 0% 10% 0%;
+         
+        }
+        /* chefright */
+        #chefright{
+            width: 95%;
+            
+        }
+         /* checkcontent */
+          #checkout{
+            font-size:400% ;
+        }
+       #loremcheckoutone{
+         font-size: 120%;
+         
+      
+        }
+        #loremcheckouttwo{
+            font-size: 120%;
+       
+        }
+        .checkcontentbox{
+          flex-wrap: wrap;
+         justify-content: center;
+          padding-left: 13%;
+        }  
+           /* deliciousreceipe section */
+        .deliciousreceipe{
+           display: block;
+           text-align: center;
+        }
+        #deliciouswriteup{
+            font-size: 300%;
+        }
+        #deliciousreceipetwo{
+           font-size: 300%; 
+        }
+        .deliciousgrid{
+            align-items: center;
+        }
+        .deliciousgridone{
+         flex-wrap: wrap;
+         justify-content: center;
+           padding: 9%;
+        }
+        .deliciousgridtwo{
+         flex-wrap: wrap;
+         justify-content: center;
+         padding: 9%;
+        
+        }
+         /* deliciousreceipe to your ibox section */
+        #hdeliciious{
+            font-size: 300%;
+        }
+          /* foodlandandfooter */
+        #foodland{
+            margin-left: 3%;
+            
+        }
+        .footer{
+            gap: 37%;
+          margin: 1% 0% 0% 3%;
+
+        }
+    }
+
+
+
+
+
+    
+       
+    
+
+
+       /* meta queries */
+     @media(max-width: 786px){
+        .head{
+            display: flex;
+            gap: 6%;
+          border-bottom: 2px solid black;
+          background-color: blue ;
+        }
+        #menu{
+            display: block;
+            width: 5%;
+            margin-left: 6%;
+        }
+        .donotdisplay{
+          display: none;
+        }
+        /* categories */
+        .categorie{
+          
+            gap: 20%;
+            
+        }
+        .insidecategories{
+           
+            flex-wrap: wrap;
+            
+        }
+          /* gridsection */
+        .firstgrid{
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-left: 0%;
+             
+           
+           
+        }
+          .secondgrid{
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-left: 0%;
+          
+        }
+          .thirdgrid{
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-left: 0%; 
+           
+        }
+        /* chefsection */
+        .chefsection{
+         display: block;
+         text-align: center;
+         margin-top: .5%;
+        }
+        /* h1writeup  */
+        .everyone{
+         font-size: 250%;
+         padding: 15% 0% 0% 0%;
+        
+        }
+       
+        /* learnmorebutton */
+        #learnmore{
+         margin: 10% 0% 10% 0%;
+         
+        }
+        /* chefright */
+        #chefright{
+            width: 350px;
+            text-align: center;
+           
+        }
+        /* checkcontent */
+        .checkcontentbox{
+          flex-wrap: wrap;
+         justify-content: center;
+          padding-left: 13%;
+        }
+        #instagram{
+         margin: 5% 0% 5% 35%;
+         padding: 1% 2% 1% 2%;
+         background-color: black;
+         color: white;
+         border-radius: 10px;
+        }
+           /* deliciousreceipe section */
+        .deliciousreceipe{
+           display: block;
+           text-align: center;
+        }
+        .deliciousgrid{
+            align-items: center;
+        }
+        .deliciousgridone{
+         flex-wrap: wrap;
+         justify-content: center;
+           padding: 9%;
+        }
+        .deliciousgridtwo{
+         flex-wrap: wrap;
+         justify-content: center;
+         padding: 9%;
+        
+        }
+        /* deliciousnesstoyourinbox */
+         #inputype{
+          top: 75%;
+          right: 27%; padding:2% 8% 2% 5%;
+         
+        }
+        #subscribe{
+            top: 77%;
+            right: 33%;
+            padding: 5px 7px 5px 7px;
+           
+        }
+        /* footer */
+         .footer{
+            display: block;
+            gap: 47%;
+          margin: 1% 0% 0% 5%;
+
+        }
+        .footer nav ul{
+         gap: 15%;
+        }
+       
+
+    }
+
+  
+       
 
     </style>
 </head>
@@ -348,21 +624,21 @@
          <div class="head">
             <img id="logo" src="../project/Foodieland..png" alt="">
             <nav>
-                <ul id="ulhead">
-                    <li>Home</li>
-                    <li>Receipes</li>
-                    <li> <a href="http://127.0.0.1:5500/Assignment/assignment9b.html">Blog</a></li>
-                    <li><a href="http://127.0.0.1:5500/Assignment/assoignment9c.html">contact</a></li>
-                    <li>About</li>
-                     <li id="headsocial"><img src="../project/001-facebook.png" alt=""></li>
-                     <li><img src="../project/003-twitter.png" alt=""></li>
-                     <li> <img src="../project/004-instagram.png" alt=""></li>
+                <ul id="ulhead" >
+                    <li class="donotdisplay">Home</li>
+                    <li class="donotdisplay">Receipes</li>
+                    <li class="donotdisplay"> <a href="http://127.0.0.1:5500/Assignment/assignment9b.html">Blog</a></li>
+                    <li class="donotdisplay"><a href="http://127.0.0.1:5500/Assignment/assoignment9c.html">contact</a></li>
+                    <li class="donotdisplay">About</li>
+                     <li class="donotdisplay" id="headsocial"><img src="../project/001-facebook.png" alt=""></li>
+                     <li class="donotdisplay"><img src="../project/003-twitter.png" alt=""></li>
+                     <li class="donotdisplay"> <img src="../project/004-instagram.png" alt=""></li>
                 </ul>
             </nav>
-         
+         <img id="menu"  src="../assets/menu-line.svg" alt="">
         </div>                                      
        <div class="spicybox">
-        <img id="recone" src="../project/Rectangle 5.png" alt="">
+        <img id="recone" class="donotdisplay donotdispayondesktop" src="../project/Rectangle 5.png" alt="">
         <div class="spicecontent">
             <div class="left">
                 <!-- <img id="receipe" src="../project/Group 828.png" alt=""> -->
@@ -375,17 +651,17 @@
                 </div>
                 <div class="johnsmith">
                     <img src="../project/Group 825.png" alt="">
-                    <img src="../project/Group 826.png" alt="">
+                    <button id="viewreceipes">view receipes</button>
                 </div>
             </div>
             <div class="right">
                 
-                <img class="firstimg" src="../project/Mask Group (1).png" alt="">
+                <img class="firstimg donotdisplay" src="../project/Mask Group (1).png" alt="">
             </div>
-                 <img id="receipe" src="../project/Group 828.png" alt="">
-               <img id="badge" src="../project/Badge (1).png" alt="">
+                 <img id="receipe" class="donotdisplay" src="../project/Group 828.png" alt="">
+               <img id="badge" class="donotdisplay" src="../project/Badge (1).png" alt="">
         </div>
-        <img id="rectwo" src="../project/Rectangle 6.png" alt="">
+        <img id="rectwo" class="donotdisplay donotdispayondesktop" src="../project/Rectangle 6.png" alt="">
        </div>
        <div class="categorie">
         <h1>categories</h1>
@@ -430,7 +706,7 @@
         </div>
        
         <div class="chefright">
-            <img src="../project/Group 880.png" alt="">
+            <img id="chefright" src="../project/Group 880.png" alt="">
         </div>
        </div>
           <h1 id="checkout">check out @foodland on instagram</h1>
@@ -447,8 +723,8 @@
            </div>
            <div class="deliciousreceipe">
              <div>
-                <h1>Try this delicious receipe</h1>
-                <h1>To make your day</h1>
+                <h1 id="deliciouswriteup">Try this delicious receipe</h1>
+                <h1 id="deliciousreceipetwo">To make your day</h1>
              </div>
              <div >
                 <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum, voluptas.</h3>
@@ -476,8 +752,8 @@
             <p id="deliciousseclorem">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
             <input type="text" name="" id="inputype">
             <button id="subscribe">subscribe</button>
-             <img id="saladleft" src="../project/kisspng-salad-salad-fresh-food-healthylife-vegetables-vegetarian-5d42e3a7cb8543 1.png" alt="">
-               <img id="saladright" src="../project/Photo (1).png" alt="">
+             <img id="saladleft" class="donotdisplay  donotdispayondesktop" src="../project/kisspng-salad-salad-fresh-food-healthylife-vegetables-vegetarian-5d42e3a7cb8543 1.png" alt="">
+               <img id="saladright" class="donotdisplay  donotdispayondesktop" src="../project/Photo (1).png" alt="">
 
          </div>
             <h2 id="foodland">foodland</h2>
@@ -488,7 +764,7 @@
             <div>
                 <nav>
                 <ul >
-                    <li>receipes</li>
+                    <li >receipes</li>
                     <li> <a href="http://127.0.0.1:5500/Assignment/assignment9b.html">Blog</a></li>
                     <li> <a href="http://127.0.0.1:5500/Assignment/assoignment9c.html">contact</a></li>
                     <li>about</li>
@@ -498,7 +774,7 @@
           </div>
           <div class="flowbase">
               <h3 id="flowbase">@2020 flowbase. powered by webflow</h3>
-              <div class="flowbasesocials">
+              <div class="flowbasesocials donotdisplay">
                  <img src="../project/001-facebook.png" alt="">
                 <img src="../project/003-twitter.png" alt="">
                 <img src="../project/004-instagram.png" alt="">
